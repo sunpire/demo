@@ -1,0 +1,5 @@
+#org.springsource.ide.eclipse.gradle.core.preferences.GradleProjectPreferences
+#Tue Jul 19 02:28:14 PDT 2016
+build.family.org.gradle.tooling.model.eclipse.HierarchicalEclipseProject=;application;application/product;shared;shared/my-lib;
+org.springsource.ide.eclipse.gradle.linkedresources=
+org.springsource.ide.eclipse.gradle.rootprojectloc=

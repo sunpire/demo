@@ -1,0 +1,15 @@
+//
+include ":shared:my-lib", ":application:product"
+
+def buildableProjects() {
+    def result = []
+    settingsDir.eachDirRecurse { dir ->
+        if (new File(dir, 'build.gradle').exists()) {
+            result << ':' + settingsDir.toPath().relativize(dir.toPath())
+                .toString().replaceAll(~/[\\\\/]/, ':')
+        }
+    }
+    result as String[]
+}
+
+include buildableProjects()
